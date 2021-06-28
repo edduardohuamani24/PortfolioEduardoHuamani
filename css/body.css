@@ -1,0 +1,52 @@
+@import "normalize.css";
+:root {
+  --color-blanco-opaco: #ebf2fa;
+  --color-plomo-oscuro: #2f3e46;
+  --color-azul-claro: #427aa1;
+  --color-azul-oscuro: #05668d;
+  --fuente-texto: 'Raleway', 'Roboto';
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--fuente-texto);
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header nav nav" "presentation presentation presentation" "skills skills skills" "portfolio portfolio portfolio" "hobbies hobbies hobbies" "contact contact contact" "footer footer footer";
+  gap: 0.3125rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.presentation {
+  grid-area: presentation;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}

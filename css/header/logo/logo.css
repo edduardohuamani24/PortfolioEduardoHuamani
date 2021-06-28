@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 50px;
+  /* margin: 5px 0; */
+  /* padding: 0 20px; */
+  border-radius: 20px;
+  background: var(--color-azul-claro);
+}
+
+.header__logo-text {
+  color: var(--color-blanco-opaco);
+}
