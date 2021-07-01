@@ -1,28 +1,27 @@
 .header {
+  /*Para que ambos elementos de bloque estén en la misma línea */
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: var(--color-plomo-oscuro);
+  /*Se establece una altura al header*/
+  height: 5rem;
 }
 
 .header__logo-container {
+  /*Para que el texto esté en el centro del contenido*/
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 25%;
-  height: 3.125rem;
-  /* margin: 5px 0; */
-  /* padding: 0 20px; */
-  border-radius: 20px;
-  background: var(--color-azul-claro);
+  /*El otro 60% lo ocupará la barra de navegación*/
+  width: 40%;
 }
 
 .header__logo-text {
   color: var(--color-blanco-opaco);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:48rem) {
   .header__logo-container {
-    background: none;
+    /*El logo se enviá al inicio y se da un padding left de 20px*/
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }

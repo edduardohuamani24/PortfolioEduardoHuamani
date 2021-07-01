@@ -1,0 +1,24 @@
+.nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 6.25rem;
+}
+
+.nav__list-item {
+  margin: 1.25rem;
+}
+
+.nav__list-link {
+  color: var(--color-blanco-opaco);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+@media screen and (max-width:48rem) {}
