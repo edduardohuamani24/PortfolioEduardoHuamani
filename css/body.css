@@ -14,16 +14,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, auto);
-  grid-template-areas: "header nav nav" "presentation presentation presentation" "skills skills skills" "portfolio portfolio portfolio" "hobbies hobbies hobbies" "contact contact contact" "footer footer footer";
+  grid-template-areas: "header header header" "presentation presentation presentation" "skills skills skills" "portfolio portfolio portfolio" "hobbies hobbies hobbies" "contact contact contact" "footer footer footer";
   gap: 0.3125rem;
 }
 
 .header {
   grid-area: header;
-}
-
-.nav {
-  grid-area: nav;
 }
 
 .presentation {
@@ -54,6 +50,6 @@ body {
   body {
     font-size: 0.875rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header nav" "presentation presentation" "skills skills" "portfolio portfolio" "hobbies hobbies" "contact" "footer footer";
+    grid-template-areas: "header header" "presentation presentation" "skills skills" "portfolio portfolio" "hobbies hobbies" "contact" "footer footer";
   }
 }
