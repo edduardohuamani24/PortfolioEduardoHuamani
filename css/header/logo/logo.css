@@ -30,5 +30,9 @@
     /*El logo se enviá al inicio y se da un padding left de 20px*/
     justify-content: flex-start;
     padding-left: 1.25rem;
+    /*Para que el menu list en responsive no tape el logo*/
+    z-index: 2;
+    /*Para que el hover de los menu list item no estén encima*/
+    margin-bottom: 0.75rem;
   }
 }
