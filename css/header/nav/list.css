@@ -1,24 +1,102 @@
-.nav {
-  width: 60%;
-  display: flex;
-  align-items: center;
-}
+ .nav {
+   width: 60%;
+   display: flex;
+   align-items: center;
+ }
 
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-left: 6.25rem;
-}
+ .nav__list {
+   display: flex;
+   flex-direction: row;
+   /*Ocupe todo el ancho que su contenedor padre*/
+   width: 100%;
+   list-style: none;
+   /*Cada elemento hijo estará separado por espacios iguales*/
+   justify-content: space-evenly;
+ }
 
-.nav__list-item {
-  margin: 1.25rem;
-}
+ /* .nav__list-item {
+   display: flex;
+   justify-content: center;
+ } */
 
-.nav__list-link {
-  color: var(--color-blanco-opaco);
-  text-decoration: none;
-  font-weight: 800;
-}
+ .nav__list-link {
+   color: var(--color-blanco-opaco);
+   text-decoration: none;
+ }
 
-@media screen and (max-width:48rem) {}
+ .nav__list-link:hover {
+   font-weight: bold;
+   /*Al pasar el cursor por cada item se muestra una línea.
+   Este shorthand de border representa primero al border-width de 2px
+   Después, el border-style, que es requerido
+   Por último, border-color pero como el enlace ya tiene el color blanco, no será necesario colocarlo.*/
+   border-bottom: 0.125rem solid;
+ }
+
+ .button-hamburger {
+   /*Se da el valor de none para quitar su espacio del flow del documento*/
+   display: none;
+   cursor: pointer;
+   border: none;
+   background: transparent;
+   margin: 0;
+   padding: 0;
+ }
+
+ /*se puso la clase br en referencia a las barras*/
+
+ .br {
+   /*Para que las barras aparezca una debajo de otro*/
+   display: block;
+   background: var(--color-blanco-opaco);
+   height: 0.125rem;
+   width: 1.25rem;
+   /*Se coloca en margin arriba y abajo para se separen las barras*/
+   margin: 0.375rem auto;
+   border-radius: 2px;
+ }
+
+ @media screen and (max-width:48rem) {
+   .nav {
+     /*Ocupar todo el alto y ancho del DOM*/
+     height: 100vh;
+     width: 100%;
+     /*Sobreponerse sobre todos los elementos*/
+     position: absolute;
+   }
+   .button-hamburger {
+     /*Se muestra el botón y recupera su espacio en el flow del DOM*/
+     display: block;
+     /*Sobreponerse al position absolute del nav*/
+     z-index: 2;
+     /*Centramos en posición vertical*/
+     align-self: center;
+     /*Caso contrario al logo le damos un padding right de 2px*/
+     padding-right: 1.25rem;
+   }
+   .nav__list {
+     /*Cambiamos la dirección por columna*/
+     flex-direction: column;
+     background: var(--color-plomo-oscuro);
+     /*Ocupará todo el alto del contenido padre*/
+     height: 100%;
+     /*Para crearle una animación se necesita darle un valor 0 en opacity y luego cambiarlo a un valor de 1*/
+     /* opacity: 0; */
+   }
+   .nav__list-item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /*Se da una altura de 50px para que el background al momento del hover se vea más alto*/
+     height: 3.125rem;
+   }
+   .nav__list-item:hover {
+     background: var(--color-azul-claro);
+   }
+   .nav__list-link {
+     font-weight: bolder;
+   }
+   .nav__list-link:hover {
+     border: none;
+   }
+ }

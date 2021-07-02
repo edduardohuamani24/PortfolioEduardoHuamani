@@ -1,27 +1,34 @@
 .header {
   /*Para que ambos elementos de bloque estén en la misma línea */
   display: flex;
+  /*Para que los 2 elementos del header estén separados*/
+  justify-content: space-between;
   background: var(--color-plomo-oscuro);
   /*Se establece una altura al header*/
   height: 5rem;
+  /* max-height: 80px; */
 }
 
-.header__logo-container {
+.logo {
   /*Para que el texto esté en el centro del contenido*/
   display: flex;
   justify-content: center;
+  align-items: center;
   /*El otro 60% lo ocupará la barra de navegación*/
   width: 40%;
-}
-
-.header__logo-text {
   color: var(--color-blanco-opaco);
+  /*SE UTILIZA EL SHORT HAND DE FONT.
+  EL PRIMER VALOR ES UN font-weight.
+  El SEGUNDO VALOR ES UN font-size
+  El último valor es un font-family;
+  NOTA: El font-size y font-family son necesarios*/
+  font: 600 1.5rem var(--fuente-texto);
 }
 
 @media screen and (max-width:48rem) {
-  .header__logo-container {
+  .logo {
     /*El logo se enviá al inicio y se da un padding left de 20px*/
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
 }
