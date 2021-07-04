@@ -3,7 +3,7 @@
   display: flex;
   /*Para que los 2 elementos del header estén separados*/
   justify-content: space-between;
-  background: var(--color-plomo-oscuro);
+  background: var(--color-verde-oscuro);
   /*Se establece una altura al header*/
   height: 5rem;
   /* max-height: 80px; */
@@ -22,7 +22,7 @@
   El SEGUNDO VALOR ES UN font-size
   El último valor es un font-family;
   NOTA: El font-size y font-family son necesarios*/
-  font: 600 1.5rem var(--fuente-texto);
+  font: 600 24px var(--fuente-texto);
 }
 
 @media screen and (max-width:48rem) {
