@@ -99,7 +99,7 @@
    .nav__list-link:hover {
      border: none;
    }
-   .nav__list-activate {
+   .nav__list--activate {
      /*Mediante el método toggle se mostrará u ocultará la lista del nav.
      Se escogió el valor flex, porque al cambiar el flex-direcion en columna, se necesita que cada item esté abajo de otro.*/
      display: flex;
