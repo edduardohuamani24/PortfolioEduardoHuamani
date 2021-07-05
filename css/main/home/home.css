@@ -48,15 +48,16 @@
   color: var(--color-plomo-oscuro);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:48rem) {
   .home {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
   }
   .developer {
+    /*Se quita el margin-left*/
     margin: 0;
+    /*La altura fija se reemplaza por una medida automática*/
     height: auto;
   }
 }
