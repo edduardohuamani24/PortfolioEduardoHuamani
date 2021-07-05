@@ -53,8 +53,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
   .developer {
     margin: 0;
+    height: auto;
   }
 }
