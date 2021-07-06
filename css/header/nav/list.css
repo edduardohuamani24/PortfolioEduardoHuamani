@@ -91,7 +91,7 @@
      height: 2.8125rem;
    }
    .nav__list-item:hover {
-     background: var(--color-verde-claro);
+     background: var(--color-plomo-oscuro);
    }
    .nav__list-link {
      font-weight: bolder;

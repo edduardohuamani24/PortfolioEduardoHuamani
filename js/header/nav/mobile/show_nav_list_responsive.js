@@ -1,6 +1,7 @@
 import { rotateBar } from "./rotate_ham_burger.js";
 const button_ham = document.querySelector(".button-hamburger");
 const nav_list = document.querySelector(".nav__list");
+const button_ham_br = document.querySelector(".br");
 
 const openCloseHam = () => {
   //El botón hamburguesa se le agregá un evento list que es una función anónimma.

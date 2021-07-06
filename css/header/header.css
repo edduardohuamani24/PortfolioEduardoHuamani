@@ -1,0 +1,16 @@
+.header {
+  /*Para que ambos elementos de bloque estén en la misma línea */
+  display: flex;
+  /*Para que los 2 elementos del header estén separados*/
+  justify-content: space-between;
+  background: var(--color-verde-oscuro);
+  /*Se establece una altura al header*/
+  height: 5rem;
+  /* max-height: 80px; */
+  /*Sticky header*/
+  position: sticky;
+  /*Para que el header se queda en posición fija*/
+  top: 0;
+  /* Se agregó una transición al top de medio segundo cuando aparezca y desaparezca la barra de navegación */
+  transition: top 0.5s;
+}

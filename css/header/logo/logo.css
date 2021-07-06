@@ -1,14 +1,4 @@
-.header {
-  /*Para que ambos elementos de bloque estén en la misma línea */
-  display: flex;
-  /*Para que los 2 elementos del header estén separados*/
-  justify-content: space-between;
-  background: var(--color-verde-oscuro);
-  /*Se establece una altura al header*/
-  height: 5rem;
-  /* max-height: 80px; */
-}
-
+@import "../header.css";
 .logo {
   /*Para que el texto esté en el centro del contenido*/
   display: flex;
