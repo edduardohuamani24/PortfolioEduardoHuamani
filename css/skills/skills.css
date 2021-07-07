@@ -1,0 +1,48 @@
+.skills {
+  height: 100vh;
+  background: var(--color-blanco-opaco);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6.25rem;
+}
+
+.skills__tittle {
+  /*Se usa el shorthand de font, para ahorrar líneas de código
+  font-variant: small-caps para poner el texto en mayúsculas
+  font-weight: bold;
+  font-size: 50px
+  font-family: Es obligatorio y se puso el nombre de la fuente y no la variable porque no lo reconoce 
+  */
+  font: small-caps bold 50px Raleway, Roboto;
+  color: var(--color-plomo-oscuro);
+}
+
+.skills__list {
+  /*Tiene todo el ancho posible de su contenedor padre*/
+  width: 100%;
+  height: auto;
+  /*Centramos el contenedor de los iconos*/
+  margin: auto;
+  list-style: none;
+  display: flex;
+  /*Cada item tendrá un flex-basis o min-width de 30%, por eso al no alcanzar se colocarán en la línea de abajo*/
+  flex-wrap: wrap;
+  /*Centrar los elementos en su eje x*/
+  justify-content: center;
+}
+
+.skills__list-item {
+  /*Le establecemos una anchura ideal de 30% de su contenedor padre*/
+  flex-basis: 30%;
+  /*Aumentamos al altura de cada li que contedrá cada icono*/
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__icon {
+  /*Aumentar el tamaño de los iconos*/
+  font-size: 50px
+}
