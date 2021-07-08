@@ -53,6 +53,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    /*Se reduce el padding-top de 100px a 60px*/
+    padding-top: 3.75rem;
   }
   .developer {
     /*Se quita el margin-left*/

@@ -14,7 +14,7 @@
   font-size: 50px
   font-family: Es obligatorio y se puso el nombre de la fuente y no la variable porque no lo reconoce 
   */
-  font: small-caps bold 50px Raleway, Roboto;
+  font: small-caps bold 3.125rem Raleway, Roboto;
   color: var(--color-plomo-oscuro);
 }
 
@@ -22,11 +22,11 @@
   /*Tiene todo el ancho posible de su contenedor padre*/
   width: 100%;
   height: auto;
-  /*Centramos el contenedor de los iconos*/
-  margin: auto;
+  /*Bajamos el contenedor de las habilidades*/
+  margin-top: 2.5rem;
   list-style: none;
   display: flex;
-  /*Cada item tendrá un flex-basis o min-width de 30%, por eso al no alcanzar se colocarán en la línea de abajo*/
+  /*Cada item tendrá un flex-basis o min-width de 30%, por eso los elementos que no alcancen en la misma línea, se colocará lo  en la línea de abajo*/
   flex-wrap: wrap;
   /*Centrar los elementos en su eje x*/
   justify-content: center;
@@ -36,13 +36,31 @@
   /*Le establecemos una anchura ideal de 30% de su contenedor padre*/
   flex-basis: 30%;
   /*Aumentamos al altura de cada li que contedrá cada icono*/
-  height: 90px;
+  height: 5.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.875rem;
 }
 
 .skills__icon {
   /*Aumentar el tamaño de los iconos*/
-  font-size: 50px
+  font-size: 3.125rem;
+}
+
+@media screen and (max-width:48rem) {
+  .skills {
+    /*Reducimos el padding-top de 100px a 60px*/
+    padding-top: 3.75rem;
+  }
+  .skills__list {
+    /* Se reduce el margín-top de 40px a 20px*/
+    margin-top: 1.25rem;
+  }
+  .skills__list-item {
+    /*el marginm-top reduce de 30px a 10px*/
+    margin-top: 0.625rem;
+    /*Se reemplaza el flex-basis de 30% por la mitad para que contengan dos habilidades por fila*/
+    flex-basis: 50%;
+  }
 }
