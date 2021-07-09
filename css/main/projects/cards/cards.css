@@ -4,14 +4,14 @@
   height: 12.5rem;
   width: 28.125rem;
   /*margin-top y margin-bottom  de 5px para separarse de los elementos superiores e inferiores correspondientes*/
-  margin: 0.3125rem 0;
+  margin: 15px 0;
   cursor: pointer;
   /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
   perspective: 125rem;
   /* Este shorthand utiliza
   transition-property: transform que corresponde a la clase rotate-img ;
-  transition-duration: Duración de medio segundo;*/
-  transition: transform .5s;
+  transition-duration: Duración de un segundo;*/
+  transition: transform 1s;
   /*
   La propiedad transform-style: Esta propiedad permite que el contenedor mantenga la ilusión de 3d.
   Gracias a esto podemos cambiar del contenedor de la imagen al del contenido ;
@@ -54,4 +54,40 @@
   transform: rotateY(180deg);
   /*El valor absolute lo usamos para que los elementos se ubican en el mismo lugar*/
   position: absolute;
+}
+
+.card__title-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-verde-oscuro);
+}
+
+.card__title {
+  color: var(--color-blanco-opaco);
+}
+
+.card__description {
+  color: var(--color-plomo-oscuro);
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+}
+
+.card__button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 40%;
+}
+
+.card__button {
+  border-radius: 20px;
+  height: 50px;
+  padding: 10px;
+  background: var(--color-plomo-oscuro);
+  color: var(--color-blanco-opaco);
+  font-weight: bold;
+  cursor: pointer;
 }
