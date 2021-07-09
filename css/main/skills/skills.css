@@ -1,3 +1,4 @@
+@import "../main.css";
 .skills {
   height: 100vh;
   background: var(--color-blanco-opaco);
@@ -5,17 +6,6 @@
   align-items: center;
   flex-direction: column;
   padding-top: 6.25rem;
-}
-
-.skills__tittle {
-  /*Se usa el shorthand de font, para ahorrar líneas de código
-  font-variant: small-caps para poner el texto en mayúsculas
-  font-weight: bold;
-  font-size: 50px
-  font-family: Es obligatorio y se puso el nombre de la fuente y no la variable porque no lo reconoce 
-  */
-  font: small-caps bold 3.125rem Raleway, Roboto;
-  color: var(--color-plomo-oscuro);
 }
 
 .skills__list {

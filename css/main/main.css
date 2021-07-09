@@ -1,0 +1,18 @@
+.sub-title {
+  /*Se usa el shorthand de font, para ahorrar líneas de código
+  font-variant: small-caps para poner el texto en mayúsculas
+  font-weight: bold;
+  font-size: 50px
+  font-family: Es obligatorio y se puso el nombre de la fuente y no la variable porque no lo reconoce 
+  */
+  font: small-caps bold 3.125rem Raleway, Roboto;
+  color: var(--color-plomo-oscuro);
+}
+
+.p-description {
+  /*Separación de margin-top con el sub-title y margin-bottom con el contenido*/
+  margin: 0.9375rem 0;
+  color: var(--color-blanco-opaco);
+  font: bold 1.125rem Raleway, Roboto;
+  ;
+}

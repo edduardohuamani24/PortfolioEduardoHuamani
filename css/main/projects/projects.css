@@ -1,0 +1,10 @@
+.projects {
+  height: 100vh;
+  background: var(--color-verde-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.1875rem 0;
+  /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
+  /* perspective: 2000px; */
+}

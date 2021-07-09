@@ -34,6 +34,6 @@ body {
   body {
     font-size: 0.875rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "presentation presentation" "skills skills" "portfolio portfolio" "hobbies hobbies" "contact" "footer footer";
+    grid-template-areas: "header header" "main main" "footer footer";
   }
 }

@@ -1,0 +1,57 @@
+@import "../projects.css";
+.card {
+  /*Se tiene que dar una altura de 200px y ancho  de 450px fijos */
+  height: 12.5rem;
+  width: 28.125rem;
+  /*margin-top y margin-bottom  de 5px para separarse de los elementos superiores e inferiores correspondientes*/
+  margin: 0.3125rem 0;
+  cursor: pointer;
+  /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
+  perspective: 125rem;
+  /* Este shorthand utiliza
+  transition-property: transform que corresponde a la clase rotate-img ;
+  transition-duration: Duración de medio segundo;*/
+  transition: transform .5s;
+  /*
+  La propiedad transform-style: Esta propiedad permite que el contenedor mantenga la ilusión de 3d.
+  Gracias a esto podemos cambiar del contenedor de la imagen al del contenido ;
+  el valor preserve-3d permite mantener el 3d
+  */
+  transform-style: preserve-3d;
+}
+
+.rotate-img {
+  /*La imagen rotará en 180 grados en su eje y
+  Se necesita un archivo js para usar el método toggle*/
+  transform: rotateY(180deg);
+}
+
+.card__image-container {
+  /*El contenedor de la imagen ocupa todo el ancho y alto de la card*/
+  width: 100%;
+  height: 100%;
+  /*Usamos la propiedad backface-visibility para obtener un reflejo del contenedor. Esta propiedad es usado con los valores rotate.
+  El valor hidden nos permite ocultar el reflejo*/
+  backface-visibility: hidden;
+  /*El valor absolute lo usamos para que los elementos se ubican en el mismo lugar*/
+  position: absolute;
+}
+
+/*Se da medidas debido a que la imagen aún no tiene las medidas necesarias.*/
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  /*El valor absolute lo usamos para que los elementos se ubican en el mismo lugar*/
+  position: absolute;
+}
+
+.card__content {
+  height: 100%;
+  width: 100%;
+  background: var(--color-blanco-opaco);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  /*El valor absolute lo usamos para que los elementos se ubican en el mismo lugar*/
+  position: absolute;
+}
