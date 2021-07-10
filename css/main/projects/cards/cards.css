@@ -91,3 +91,30 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media screen and (max-width:48rem) {
+  .p-description {
+    /*Ocultamos las indicaciones*/
+    display: none;
+  }
+  .card__title-container {
+    height: 25%;
+  }
+  .card__description {
+    /*La descripción de cada proyecto dentro de la card*/
+    display: none;
+  }
+  .card__button-container {
+    /*Le damos una altura del 80% al contenedor de botones y los otros 20% se resta del titulo de cada card*/
+    height: 75%;
+    display: flex;
+    /*Se cambia la dirección flex en columna*/
+    flex-direction: column;
+    /*Centramos en su eje Y*/
+    align-items: center;
+  }
+  .card__button {
+    /*Anchura de casi todo el contenedor padre*/
+    width: 90%;
+  }
+}
