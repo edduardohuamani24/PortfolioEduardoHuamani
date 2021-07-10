@@ -4,7 +4,7 @@
   height: 12.5rem;
   width: 28.125rem;
   /*margin-top y margin-bottom  de 5px para separarse de los elementos superiores e inferiores correspondientes*/
-  margin: 15px 0;
+  margin: 0.9375rem 0;
   cursor: pointer;
   /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
   perspective: 125rem;
@@ -72,7 +72,7 @@
   color: var(--color-plomo-oscuro);
   font-weight: bolder;
   text-align: center;
-  margin: 10px;
+  margin-top: 1.25rem;
 }
 
 .card__button-container {
@@ -83,9 +83,9 @@
 }
 
 .card__button {
-  border-radius: 20px;
-  height: 50px;
-  padding: 10px;
+  border-radius: 1.25rem;
+  height: 3.125rem;
+  padding: 0.625rem;
   background: var(--color-plomo-oscuro);
   color: var(--color-blanco-opaco);
   font-weight: bold;
