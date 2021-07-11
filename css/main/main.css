@@ -11,8 +11,8 @@
 
 .p-description {
   /*Separación de margin-top con el sub-title y margin-bottom con el contenido*/
-  margin: 0.9375rem 0;
-  color: var(--color-blanco-opaco);
+  margin: 1.5625rem 0;
+  color: var(--color-plomo-oscuro);
   font: bold 1.125rem Raleway, Roboto;
   ;
 }
