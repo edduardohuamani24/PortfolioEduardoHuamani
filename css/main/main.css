@@ -16,3 +16,14 @@
   font: bold 1.125rem Raleway, Roboto;
   ;
 }
+
+.card-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hobbies__icon {
+  background: red;
+}

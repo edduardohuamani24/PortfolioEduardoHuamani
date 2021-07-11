@@ -1,0 +1,88 @@
+.hobbies {
+  height: 100vh;
+  width: 100%;
+  background: var(--color-blanco-opaco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.75rem 0;
+}
+
+.card-container__hobbies {
+  /*Se agrega esta clase extra porque la clase card-container no tiene margin y se necesita un margin-top de 80px*/
+  margin-top: 5rem;
+}
+
+.hobbies__card {
+  /*Se da una altura de 250px a cada card*/
+  height: 15.625rem;
+  /*Se divide / 3 y los 10% restante es para el espacio que requiere el justify-content: space-evenly de la clase card-container*/
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies__content {
+  width: 100%;
+  /*Una altura de la 1/4 parte de cada card*/
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-plomo-oscuro);
+}
+
+.hobbies__icon {
+  /*Se reduce el tamaño de cada icono a 30px*/
+  font-size: 1.875rem;
+  /*Se quita el background*/
+  background: none;
+  color: var(--color-blanco-opaco);
+}
+
+.p-description__hobbies {
+  /*Los otros 75% restantes*/
+  height: 75%;
+  text-align: justify;
+  /*PAdding top y bottom de 25 px y 5px para right y left*/
+  padding: 25px 5px;
+  background: var(--color-verde-oscuro);
+  color: var(--color-blanco-opaco);
+  font: bold 1.125rem Raleway, Roboto;
+}
+
+.hobbies__card-title {
+  display: none;
+}
+
+@media screen and (max-width:48rem) {
+  .card-container__hobbies {
+    /*Se reduce el margin-top a 30px*/
+    margin-top: 1.875rem;
+  }
+  .hobbies__card {
+    /*La altura de cada card se reduce a 120px*/
+    height: 120px;
+    /*Ahora cada card ocupa el 100% de ancho del contenedor padre*/
+    width: 100%;
+  }
+  .hobbies__content {
+    /*Se quita el fondo de color*/
+    background: none;
+  }
+  .hobbies__icon {
+    /*Se cambia el color de cada icono*/
+    color: var(--color-plomo-oscuro);
+  }
+  .p-description__hobbies {
+    /*Ocultamos la descripción de cada actividad*/
+    display: none;
+  }
+  .hobbies__card-title {
+    /*Vuelve a aparecer el título de cada actividad*/
+    display: block;
+    text-align: center;
+    /*Se da un padding top y bottom de 20px*/
+    padding: 1.25rem 0;
+  }
+}

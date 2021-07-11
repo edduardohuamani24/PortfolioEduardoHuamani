@@ -1,18 +1,11 @@
 @import "../projects.css";
-.card-container {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .card {
   /*Se tiene que dar una altura de 200px y ancho  de 450px fijos */
   height: 12.5rem;
   width: 28.125rem;
   /*margin-top y margin-bottom  de 5px para separarse de los elementos superiores e inferiores correspondientes*/
   margin: 0.9375rem 0;
-  border: 0.25rem solid var(--color-plomo-oscuro);
+  border: 0.1875rem solid var(--color-plomo-oscuro);
   /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
   perspective: 125rem;
   /* Este shorthand utiliza
@@ -115,7 +108,7 @@
   }
   .card {
     /*Una altura máxima de 160px, que son 40px menos que en la vista para desktop*/
-    max-height: 160px;
+    max-height: 10rem;
   }
   .card__title-container {
     height: 25%;
