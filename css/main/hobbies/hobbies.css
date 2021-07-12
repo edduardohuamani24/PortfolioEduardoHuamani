@@ -72,7 +72,7 @@
   }
   .hobbies__icon {
     /*Se cambia el color de cada icono*/
-    color: var(--color-plomo-oscuro);
+    color: var(--color-verde-claro);
   }
   .p-description__hobbies {
     /*Ocultamos la descripción de cada actividad*/
