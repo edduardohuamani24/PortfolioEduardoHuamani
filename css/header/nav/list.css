@@ -43,17 +43,6 @@
 
  /*se puso la clase br en referencia a las barras*/
 
- .br {
-   /*Para que las barras aparezca una debajo de otro*/
-   display: block;
-   background: var(--color-blanco-opaco);
-   height: 0.125rem;
-   width: 1.25rem;
-   /*Se coloca en margin arriba y abajo para se separen las barras*/
-   margin: 0.375rem auto;
-   border-radius: 0.125rem;
- }
-
  @media screen and (max-width:48rem) {
    .nav {
      /*Ocupar todo el alto y ancho del DOM*/
@@ -61,12 +50,13 @@
      width: 100%;
      /*Sobreponerse sobre todos los elementos*/
      position: absolute;
+     z-index: 3;
    }
    .button-hamburger {
      /*Se muestra el botón y recupera su espacio en el flow del DOM*/
      display: block;
      /*Sobreponerse al position absolute del nav*/
-     z-index: 2;
+     z-index: 4;
      /*Centramos en posición vertical*/
      align-self: center;
      /*Caso contrario al logo le damos un padding right de 2px*/
@@ -110,6 +100,16 @@
      animation-fill-mode: both -> indica que opacity con 0 se va a mantener antes que empiece la animación y opacity con 1 se va mantener durante y después de terminar la animación
      */
      animation: muestraNav 350ms ease-in-out both;
+   }
+   .br {
+     /*Para que las barras aparezca una debajo de otro*/
+     display: block;
+     background: var(--color-plomo-oscuro);
+     height: 0.125rem;
+     width: 1.25rem;
+     /*Se coloca en margin arriba y abajo para se separen las barras*/
+     margin: 0.375rem auto;
+     border-radius: 0.125rem;
    }
    /*ANIMACIÓN PARA CAMBIAR LAS BARRAS DEL BOTÓN HAMBURGER*/
    .br-1.animation {

@@ -28,4 +28,4 @@ const rotateImage = () => {
   });
 };
 
-export { rotateImage };
+export { rotateImage, card_item };

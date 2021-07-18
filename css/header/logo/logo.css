@@ -17,6 +17,7 @@
 
 @media screen and (max-width:48rem) {
   .logo {
+    color: var(--color-plomo-oscuro);
     /*El logo se enviá al inicio y se da un padding left de 20px*/
     justify-content: flex-start;
     padding-left: 1.25rem;

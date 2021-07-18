@@ -13,4 +13,13 @@
   top: 0;
   /* Se agregó una transición al top de medio segundo cuando aparezca y desaparezca la barra de navegación */
   transition: top 0.5s;
+  /*Posicionar encimar de las cards de los projects*/
+  /* z-index: 2; */
+}
+
+@media screen and (max-width:48rem) {
+  .header {
+    background: transparent;
+    /* visibility: hidden; */
+  }
 }

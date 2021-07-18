@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/main/skills/skills.css">
   <link rel="stylesheet" href="css/main/projects/cards/cards.css">
   <link rel="stylesheet" href="css/main/hobbies/hobbies.css">
+  <link rel="stylesheet" href="css/main//contact/contact.css">
   <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
@@ -69,7 +70,7 @@
       </div>
       </p>
     </div>
-    <div class="skills">
+    <div class="skills main-section">
       <div class="sub-title">Habilidades</div>
       <ul class="skills__list">
         <li class="skills__list-item">
@@ -86,7 +87,7 @@
         </li>
       </ul>
     </div>
-    <div class="projects">
+    <div class="projects main-section">
       <div class="sub-title">Proyectos</div>
       <p class="p-description"> Pasar el cursor por encima de los proyectos para ver una breve descripción y los enlaces
         correspondientes.</p>
@@ -133,7 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="hobbies">
+    <div class="hobbies main-section">
       <div class="sub-title">Pasatiempos</div>
       <div class="card-container card-container__hobbies">
         <div class="hobbies__card">
@@ -170,11 +171,16 @@
         </div>
       </div>
     </div>
-    <div class="contact">
-      <ul class="contact__list">
-        <li class="contact__list-item">Github</li>
-        <li class="contact__list-item">Linkedin</li>
-      </ul>
+    <div class="contact main-section">
+      <div class="sub-title">Contacto</div>
+      <div id="button_container" class="contact__button-container">
+        <button id="button_github" class="contact__button" type="button">
+          <i class="contact__icon fab fa-github"></i>
+        </button>
+        <button id="button_linkedin" class="contact__button" type="button">
+          <i class="contact__icon fab fa-linkedin"></i>
+        </button>
+      </div>
     </div>
   </main>
   <footer class="footer">

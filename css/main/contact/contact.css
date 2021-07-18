@@ -1,0 +1,47 @@
+.contact {
+  background: var(--color-verde-claro);
+}
+
+.contact__button-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact__button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  /*Se establece una altura de 90px al botón*/
+  height: 5.625rem;
+}
+
+.contact__icon {
+  color: var(--color-blanco-opaco);
+  /*El font-size del icono será igual a la altura del botón*/
+  font-size: 5.625rem;
+}
+
+.contact__icon:hover {
+  color: var(--color-plomo-oscuro);
+}
+
+@media screen and (max-width:48rem) {
+  .contact__button-container {
+    flex-direction: column;
+  }
+  .contact__button {
+    /*Para que podamos usar los botones para mobiles y que la lista de la barra de navegación no este encima*/
+    z-index: 1;
+  }
+  .contact__icon {
+    /*Se encoge a 60px los iconos*/
+    font-size: 60px;
+  }
+  /*Clase para que los botones no se sobrepongan a la lista de navegación*/
+  .hidden-button {
+    visibility: hidden;
+  }
+}

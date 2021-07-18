@@ -9,6 +9,14 @@
   color: var(--color-plomo-oscuro);
 }
 
+.main-section {
+  height: 100vh;
+  padding-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .p-description {
   /*Separación de margin-top con el sub-title y margin-bottom con el contenido*/
   margin: 1.5625rem 0;
@@ -22,8 +30,4 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-}
-
-.hobbies__icon {
-  background: red;
 }

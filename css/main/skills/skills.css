@@ -1,18 +1,13 @@
 @import "../main.css";
 .skills {
-  height: 100vh;
   background: var(--color-blanco-opaco);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 6.25rem;
 }
 
 .skills__list {
   /*Tiene todo el ancho posible de su contenedor padre*/
   width: 100%;
   height: auto;
-  /*Bajamos el contenedor de las habilidades*/
+  /*Bajamos el contenedor 40px del subtitulo habilidades*/
   margin-top: 2.5rem;
   list-style: none;
   display: flex;

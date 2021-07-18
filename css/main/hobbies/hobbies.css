@@ -1,11 +1,6 @@
 .hobbies {
-  height: 100vh;
-  width: 100%;
   background: var(--color-blanco-opaco);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3.75rem 0;
+  /* padding: 3.75rem 0; */
 }
 
 .card-container__hobbies {
@@ -57,12 +52,12 @@
 
 @media screen and (max-width:48rem) {
   .card-container__hobbies {
-    /*Se reduce el margin-top a 30px*/
-    margin-top: 1.875rem;
+    /*Se reduce el margin-top a 20px*/
+    margin-top: 1.25rem;
   }
   .hobbies__card {
     /*La altura de cada card se reduce a 120px*/
-    height: 120px;
+    height: 7.5rem;
     /*Ahora cada card ocupa el 100% de ancho del contenedor padre*/
     width: 100%;
   }
@@ -82,7 +77,7 @@
     /*Vuelve a aparecer el título de cada actividad*/
     display: block;
     text-align: center;
-    /*Se da un padding top y bottom de 20px*/
-    padding: 1.25rem 0;
+    /*Se da un padding top y bottom de 10px*/
+    padding: 0.625rem 0;
   }
 }
