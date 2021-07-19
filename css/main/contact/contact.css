@@ -38,7 +38,7 @@
   }
   .contact__icon {
     /*Se encoge a 60px los iconos*/
-    font-size: 60px;
+    font-size: 3.75rem;
   }
   /*Clase para que los botones no se sobrepongan a la lista de navegación*/
   .hidden-button {

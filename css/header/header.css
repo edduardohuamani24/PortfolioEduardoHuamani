@@ -3,7 +3,7 @@
   display: flex;
   /*Para que los 2 elementos del header estén separados*/
   justify-content: space-between;
-  background: var(--color-verde-oscuro);
+  background: var(--color-plomo-oscuro);
   /*Se establece una altura al header*/
   height: 5rem;
   /* max-height: 80px; */

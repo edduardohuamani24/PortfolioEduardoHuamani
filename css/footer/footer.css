@@ -1,0 +1,26 @@
+.footer {
+  /*Se establece una altura fija de 100px*/
+  height: 6.25rem;
+  width: 100%;
+  /* max-width: 100%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  /*La propiedad place-items es un shorthand de align-items y justify item.
+  Necesitar ser de valor grid*/
+  place-items: center;
+  background: var(--color-plomo-oscuro);
+}
+
+.footer__text {
+  color: var(--color-blanco-opaco);
+  /*shorthand de font-weight,font-size y font-family*/
+  font: bold 1.125rem Roboto;
+}
+
+@media screen and (max-width:48rem) {
+  .footer__text {
+    font-size: 0.75rem;
+  }
+}
