@@ -19,14 +19,15 @@
 
 .p-description {
   /*Separación de margin-top con el sub-title y margin-bottom con el contenido*/
-  margin: 1.5625rem 0;
+  margin: 1.5625rem 1.25rem;
   color: var(--color-plomo-oscuro);
   font: bold 1.125rem Raleway, Roboto;
-  ;
+  /*Para que el párrafo se adapte al tamaño del contenedor padre  */
+  flex-shrink: 2;
 }
 
 .card-container {
-  height: 70%;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

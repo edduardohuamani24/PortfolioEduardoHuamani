@@ -2,6 +2,7 @@
   background: var(--color-verde-claro);
   /*Para el efecto 3d se necesita que el contenedor padre tenga perspective */
   /* perspective: 2000px; */
+  padding: 1.25rem 0.625rem;
 }
 
 @media screen and (max-width:48rem) {

@@ -21,5 +21,7 @@
   .header {
     background: transparent;
     /* visibility: hidden; */
+    /*Para que el header esté encima de los cards de los proyectos*/
+    /* z-index: none; */
   }
 }

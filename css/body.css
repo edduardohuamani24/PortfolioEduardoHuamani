@@ -7,6 +7,12 @@
   --fuente-texto: 'Raleway', 'Roboto';
 }
 
+html {
+  /*La propiedad scrooll-behavior indica el comportamiento del desplazamiento.
+  El valor smooth da un desplazamiento suave*/
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: var(--fuente-texto);

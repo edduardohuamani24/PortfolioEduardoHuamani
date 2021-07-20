@@ -40,7 +40,7 @@
   height: 75%;
   text-align: justify;
   /*PAdding top y bottom de 25 px y 5px para right y left*/
-  padding: 25px 5px;
+  padding: 15px 0.3125rem;
   background: var(--color-verde-oscuro);
   color: var(--color-blanco-opaco);
   font: bold 1.125rem Raleway, Roboto;

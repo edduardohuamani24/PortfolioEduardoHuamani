@@ -30,7 +30,12 @@
    Este shorthand de border representa primero al border-width de 2px
    Después, el border-style, que es requerido
    Por último, border-color pero como el enlace ya tiene el color blanco, no será necesario colocarlo.*/
-   border-bottom: 0.125rem solid;
+   /* border-bottom: 0.125rem solid; */
+ }
+
+ .link-activate {
+   font-weight: bold;
+   border-bottom: 0.125rem solid var(--color-blanco-opaco);
  }
 
  .button-hamburger {

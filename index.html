@@ -28,27 +28,27 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="" class="nav__list-link">
+          <a id="home-link" href="#home-section" class="nav__list-link">
             Inicio
           </a>
         </li>
-        <li class="nav__list-item">
-          <a href="" class="nav__list-link">
+        <li id="skills-link" class="nav__list-item">
+          <a href="#skills-section" class="nav__list-link">
             Habilidades
           </a>
         </li>
-        <li class="nav__list-item">
-          <a href="" class="nav__list-link">
+        <li id="projects-link" class="nav__list-item">
+          <a href="#projects-section" class="nav__list-link">
             Proyectos
           </a>
         </li>
-        <li class="nav__list-item">
-          <a href="" class="nav__list-link">
+        <li id="hobbies-link" class="nav__list-item">
+          <a href="#hobbies-section" class="nav__list-link">
             Pasatiempos
           </a>
         </li>
-        <li class="nav__list-item">
-          <a href="" class="nav__list-link">
+        <li id="contact-link" class="nav__list-item">
+          <a href="#contact-section" class="nav__list-link">
             Contacto
           </a>
         </li>
@@ -61,129 +61,139 @@
     </button>
   </header>
   <main class="main">
-    <div class="home">
-      <div class="photo-container">
-        <img src="img/foto.jpg" alt="Foto del autor del sitio web" class="photo-container__developer">
-      </div>
-      <div class="developer">
-        <h1 class="devoloper__name">Eduardo Huamani</h1>
-        <p class="developer__description">
-          Desarrollador front end
-      </div>
-      </p>
-    </div>
-    <div class="skills main-section">
-      <div class="sub-title">Habilidades</div>
-      <ul class="skills__list">
-        <li class="skills__list-item">
-          <i class="skills__icon fab fa-html5"></i>
-        </li>
-        <li class="skills__list-item">
-          <i class="skills__icon fab fa-css3-alt"></i>
-        </li>
-        <li class="skills__list-item">
-          <i class="skills__icon fab fa-js"></i>
-        </li>
-        <li class="skills__list-item">
-          <i class="skills__icon fab fa-git-alt"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="projects main-section">
-      <div class="sub-title">Proyectos</div>
-      <p class="p-description"> Pasar el cursor por encima de los proyectos para ver una breve descripción y los enlaces
-        correspondientes.</p>
-      <div class="card-container">
-        <div class="card">
-          <div class="card__image-container">
-            <img class="card__image" src="img/proyecto_1.PNG" alt="Imágen del primer proyecto">
-          </div>
-          <div class="card__content">
-            <div class="card__title-container">
-              <h3 class="card__title">List Pokemon</h3>
-            </div>
-            <p class="card__description">Se consume la API pokeapi.co mediante funciones async await. Además, se usa Css
-              y
-              Html.</p>
-            <div class="card__button-container">
-              <button id="button_page_001" class="card__button" type="button">
-                Página web
-              </button>
-              <button id="button_repository_001" class="card__button" type="button">
-                Repositorio
-              </button>
-            </div>
-          </div>
+    <section id="home-section">
+      <div class="home">
+        <div class="photo-container">
+          <img src="img/foto.jpg" alt="Foto del autor del sitio web" class="photo-container__developer">
         </div>
-        <div class="card">
-          <div class="card__image-container">
-            <img class="card__image" src="img/proyecto_2.PNG" alt="Imágen del segundo proyecto">
-          </div>
-          <div class="card__content">
-            <div class="card__title-container">
-              <h3 class="card__title">Comic Review</h3>
+        <div class="developer">
+          <h1 class="devoloper__name">Eduardo Huamani</h1>
+          <p class="developer__description">
+            Desarrollador front end
+        </div>
+        </p>
+      </div>
+    </section>
+    <section id="skills-section">
+      <div class="skills main-section">
+        <div class="sub-title">Habilidades</div>
+        <ul class="skills__list">
+          <li class="skills__list-item">
+            <i class="skills__icon fab fa-html5"></i>
+          </li>
+          <li class="skills__list-item">
+            <i class="skills__icon fab fa-css3-alt"></i>
+          </li>
+          <li class="skills__list-item">
+            <i class="skills__icon fab fa-js"></i>
+          </li>
+          <li class="skills__list-item">
+            <i class="skills__icon fab fa-git-alt"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects-section">
+      <div class="projects main-section">
+        <div class="sub-title">Proyectos</div>
+        <p class="p-description"> Pasar el cursor en cada tarjeta para ver los enlaces de Github y Linkedin.</p>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image-container">
+              <img class="card__image" src="img/proyecto_1.PNG" alt="Imágen del primer proyecto">
             </div>
-            <p class="card__description">El proyecto tiene Vanilla Javascript, Css y Html.</p>
-            <div class="card__button-container">
-              <button id="button_page_002" class="card__button" type="button">
-                Página web
-              </button>
-              <button id="button_repository_002" class="card__button" type="button">
-                Repositorio
-              </button>
+            <div class="card__content">
+              <div class="card__title-container">
+                <h3 class="card__title">List Pokemon</h3>
+              </div>
+              <p class="card__description">Se consume la API pokeapi.co mediante funciones async await. Además, se usa
+                Css
+                y
+                Html.</p>
+              <div class="card__button-container">
+                <button id="button_page_001" class="card__button" type="button">
+                  Página web
+                </button>
+                <button id="button_repository_001" class="card__button" type="button">
+                  Repositorio
+                </button>
+              </div>
             </div>
           </div>
+          <div class="card">
+            <div class="card__image-container">
+              <img class="card__image" src="img/proyecto_2.PNG" alt="Imágen del segundo proyecto">
+            </div>
+            <div class="card__content">
+              <div class="card__title-container">
+                <h3 class="card__title">Comic Review</h3>
+              </div>
+              <p class="card__description">El proyecto tiene Vanilla Javascript, Css y Html.</p>
+              <div class="card__button-container">
+                <button id="button_page_002" class="card__button" type="button">
+                  Página web
+                </button>
+                <button id="button_repository_002" class="card__button" type="button">
+                  Repositorio
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hobbies main-section">
-      <div class="sub-title">Pasatiempos</div>
-      <div class="card-container card-container__hobbies">
-        <div class="hobbies__card">
-          <h3 class="hobbies__card-title">Cómics</h3>
-          <div class="hobbies__content">
-            <i class="fas fa-book-reader hobbies__icon"></i>
+    </section>
+    <section id="hobbies-section">
+      <div class="hobbies main-section">
+        <div class="sub-title">Pasatiempos</div>
+        <div class="card-container card-container__hobbies">
+          <div class="hobbies__card">
+            <h3 class="hobbies__card-title">Cómics</h3>
+            <div class="hobbies__content">
+              <i class="fas fa-book-reader hobbies__icon"></i>
+            </div>
+            <p class="p-description__hobbies">Me gusta leer cómics de Marvel y DC. Mis personajes favoritos
+              son Spiderman, Batman,
+              Superman, Wolverine y
+              Venom.</p>
           </div>
-          <p class="p-description__hobbies">Me gusta leer cómics de Marvel y DC. Mis personajes favoritos
-            son Spiderman, Batman,
-            Superman, Wolverine y
-            Venom.</p>
-        </div>
-        <div class="hobbies__card">
-          <h3 class="hobbies__card-title"> Videojuegos</h3>
-          <div class="hobbies__content">
-            <i class="fas fa-gamepad hobbies__icon"></i>
+          <div class="hobbies__card">
+            <h3 class="hobbies__card-title"> Videojuegos</h3>
+            <div class="hobbies__content">
+              <i class="fas fa-gamepad hobbies__icon"></i>
+            </div>
+            <p class="p-description__hobbies">Mi saga de videojuegos favorita es God of War y algunos juegos
+              de la Wwe. En celular
+              juego con frecuencia
+              Pokemon go.</p>
           </div>
-          <p class="p-description__hobbies">Mi saga de videojuegos favorita es God of War y algunos juegos
-            de la Wwe. En celular
-            juego con frecuencia
-            Pokemon go.</p>
-        </div>
-        <div class="hobbies__card">
-          <h3 class="hobbies__card-title"> Animes, películas y series</h3>
-          <div class="hobbies__content">
-            <i class="fas fa-tv hobbies__icon"></i>
+          <div class="hobbies__card">
+            <h3 class="hobbies__card-title"> Animes, películas y series</h3>
+            <div class="hobbies__content">
+              <i class="fas fa-tv hobbies__icon"></i>
+            </div>
+            <p class="p-description__hobbies">Veo Wwe, los Simpson y Friends. Mis animes favoritos
+              son Dragon ball, Saint
+              Seiya y The seven
+              deadly sins.
+              Me gustan las peliculas de Rocky y la primera trilogía de
+              Star Wars.</p>
           </div>
-          <p class="p-description__hobbies">Miro Wwe, los Simpson y Friends. Mis animes favoritos
-            son Dragon ball, Saint
-            Seiya y The seven
-            deadly sins.
-            Me gustan las peliculas de Rocky, la primera trilogía de
-            Star Wars y la máscara.</p>
         </div>
       </div>
-    </div>
-    <div class="contact main-section">
-      <div class="sub-title">Contacto</div>
-      <div id="button_container" class="contact__button-container">
-        <button id="button_github" class="contact__button" type="button">
-          <i class="contact__icon fab fa-github"></i>
-        </button>
-        <button id="button_linkedin" class="contact__button" type="button">
-          <i class="contact__icon fab fa-linkedin"></i>
-        </button>
+    </section>
+    <section id="contact-section">
+      <div class="contact main-section">
+        <div class="sub-title">Contacto</div>
+        <div id="button_container" class="contact__button-container">
+          <button id="button_github" class="contact__button" type="button">
+            <i class="contact__icon fab fa-github"></i>
+          </button>
+          <button id="button_linkedin" class="contact__button" type="button">
+            <i class="contact__icon fab fa-linkedin"></i>
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer">
     <p class="footer__text">Desarrollado y diseñado por Eduardo Huamani - 2021</p>
