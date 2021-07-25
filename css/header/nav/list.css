@@ -131,6 +131,14 @@
      /*El translate lo realiza dando un movimiento de -11px  en su eje x u horizontal*/
      transform: rotate(45deg) translate(-0.6875rem);
    }
+   /*Quitar subryado para vista en móviles*/
+   .link-activate {
+     border-bottom: none;
+   }
+   /*Clase esconder barra espaciadoa Y*/
+   .scroll-hidden {
+     overflow-y: hidden;
+   }
    /***ANIMACIONES***/
    @keyframes muestraNav {
      from {

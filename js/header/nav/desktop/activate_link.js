@@ -1,5 +1,4 @@
 import { link, removeBorder } from "./remove_border_link.js";
-
 /*En la función activateLink se quitará el estilo de subrayado mediante la función removeBorder que quitará a todos los elementos la clase link-activate.
 A cada item de la colección se le agregará la clase según su posición */
 
