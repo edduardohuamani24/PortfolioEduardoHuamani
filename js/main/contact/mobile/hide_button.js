@@ -4,4 +4,4 @@ const hideButton = () => {
   button_container.classList.toggle("hidden-button");
 };
 
-export { hideButton };
+export { button_container, hideButton };
