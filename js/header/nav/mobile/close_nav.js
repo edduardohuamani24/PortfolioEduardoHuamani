@@ -1,5 +1,5 @@
 /*importamos los enlaces del DOM */
-import { link } from "../desktop/remove_border_link.js";
+import { link } from "../desktop/activate_link.js";
 /*También importamos el menu */
 import { nav_list } from "./show_nav_list_responsive.js";
 /*importar el método que transforma el icono hamburguesa */
