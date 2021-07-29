@@ -1,6 +1,6 @@
 /* Obtenemos una colección de los enlaces dentro de cada list item */
 let link = document.querySelectorAll(".nav__list-item a");
-const verificateLink = () => {
+const activateLink = () => {
   /*Activar enlaces según sección.
 Se usará la API IntersectionObserver de Js */
   //En una constante almacenamos la instancia de IntersectionObserver que  va a recibir una función que tendrá una entries como parámetro
@@ -67,4 +67,4 @@ A cada item de la colección se le agregará la clase según su posición */
 //   });
 // };
 
-export { link, verificateLink };
+export { link, activateLink };

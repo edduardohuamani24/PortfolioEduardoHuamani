@@ -3,7 +3,7 @@ import { showHiddenHeader } from "./header/nav/desktop/show_hide_nav.js";
 import { rotateImage } from "./main/projects/card/desktop/rotate_img.js";
 import { linkButton } from "./main/projects/card/desktop/link_button.js";
 import { linkContact } from "./main/contact/desktop/link_contact.js";
-import { verificateLink } from "./header/nav/desktop/activate_link.js";
+import { activateLink } from "./header/nav/desktop/activate_link.js";
 import { closeNav } from "./header/nav/mobile/close_nav.js";
 
 // Abrir y cerrar el botón con forma de hamburguesa en vista para móviles.
@@ -18,4 +18,5 @@ linkButton();
 linkContact();
 /*Cerrar ventana de menu en modo responsive */
 closeNav();
-verificateLink();
+/*Subrayar cada enlace según su ubicación de cada sección */
+activateLink();

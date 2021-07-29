@@ -13,15 +13,15 @@
   top: 0;
   /* Se agregó una transición al top de medio segundo cuando aparezca y desaparezca la barra de navegación */
   transition: top 0.5s;
-  /*Posicionar encimar de las cards de los projects*/
-  /* z-index: 2; */
+  /*z-index: 2 para que las cards de los proyecto no estén encima del nav*/
+  z-index: 2;
 }
 
 @media screen and (max-width:48rem) {
   .header {
     background: transparent;
-    /* visibility: hidden; */
-    /*Para que el header esté encima de los cards de los proyectos*/
-    /* z-index: none; */
+    /* z-index: auto Para que las cards puedan girar al pasar el cursor
+    Esto ocurre es porque el nav ocupada toda la pantalla*/
+    z-index: auto;
   }
 }
