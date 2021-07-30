@@ -55,13 +55,13 @@
      width: 100%;
      /*Sobreponerse sobre todos los elementos*/
      position: absolute;
-     z-index: 3;
+     z-index: var(--z-index-2-header-mobile);
    }
    .button-hamburger {
      /*Se muestra el botón y recupera su espacio en el flow del DOM*/
      display: block;
      /*Sobreponerse al position absolute del nav*/
-     z-index: 4;
+     z-index: var(--z-index-2-header-mobile);
      /*Centramos en posición vertical*/
      align-self: center;
      /*Caso contrario al logo le damos un padding right de 2px*/

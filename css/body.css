@@ -5,6 +5,8 @@
   --color-verde-claro: #52b788;
   --color-verde-oscuro: #2d6a4f;
   --fuente-texto: 'Raleway', 'Roboto';
+  --z-index-1-header-desktop: 1;
+  --z-index-2-header-mobile: 2;
 }
 
 html {
@@ -23,6 +25,8 @@ body {
   grid-template-rows: repeat(7, auto);
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   /* gap: 0.3125rem; */
+  /*Para que el fondo transparente del header para móviles no se quede blanco*/
+  background: var(--color-verde-claro);
 }
 
 .header {

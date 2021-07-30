@@ -13,8 +13,8 @@
   top: 0;
   /* Se agregó una transición al top de medio segundo cuando aparezca y desaparezca la barra de navegación */
   transition: top 0.5s;
-  /*z-index: 2 para que las cards de los proyecto no estén encima del nav*/
-  z-index: 2;
+  /*z-index: 1 para que las cards de los proyecto no estén encima del nav*/
+  z-index: var(--z-index-1-header-desktop);
 }
 
 @media screen and (max-width:48rem) {
