@@ -3,7 +3,7 @@ import { link } from "../desktop/activate_link.js";
 /*También importamos el menu */
 import { nav_list } from "./show_nav_list_responsive.js";
 /*importar el método que transforma el icono hamburguesa */
-import { rotateBar } from "./rotate_ham_burger.js";
+import { button_br } from "./rotate_ham_burger.js";
 /*Importar el contenedor de las cards de los proyectos */
 import { card_container } from "../../../main/projects/card/mobile/hide_card.js";
 import { button_container } from "../../../main/contact/mobile/hide_button.js";
@@ -20,8 +20,10 @@ const closeNav = () => {
       card_container.classList.remove("card__hidden");
       /*Se elimina la clase que oculta al contenedor de los botones de contacto */
       button_container.classList.remove("hidden-button");
-      /*Además, se ejecutará la función para rotar las barras y no se quede como el símbolo de borrar */
-      rotateBar();
+      /*Además, se removerá la clase que realiza el giro de las barras, para evitar que al dar click en los enlaces en la vista para escritorio afecte el botón hamburger de la vista para móviles.*/
+      button_br.forEach((child) => {
+        child.classList.remove("animation");
+      });
     });
   });
 };
