@@ -1,7 +1,10 @@
 import { openCloseHam } from "./header/nav/mobile/show_nav_list_responsive.js";
 import { showHiddenHeader } from "./header/nav/desktop/show_hide_nav.js";
 import { rotateImage } from "./main/projects/card/desktop/rotate_img.js";
-import { linkButton } from "./main/projects/card/desktop/link_button.js";
+import {
+  linkButton,
+  linkPage,
+} from "./main/projects/card/desktop/link_button.js";
 import { linkContact } from "./main/contact/desktop/link_contact.js";
 import { activateLink } from "./header/nav/desktop/activate_link.js";
 import { closeNav } from "./header/nav/mobile/close_nav.js";
@@ -20,3 +23,5 @@ linkContact();
 closeNav();
 /*Subrayar cada enlace según su ubicación de cada sección */
 activateLink();
+/*Abrir páginas de mis proyectos ya mínificados los archivos */
+linkPage();
