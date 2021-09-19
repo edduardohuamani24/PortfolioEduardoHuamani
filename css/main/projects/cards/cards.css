@@ -117,8 +117,8 @@
   }
   .card {
     /*Una altura máxima de 160px, que son 40px menos que en la vista para desktop*/
-    max-height: 10rem;
-    max-width: 300px;
+    height: 10rem;
+    width: 300px;
   }
   .card__title-container {
     height: 25%;
