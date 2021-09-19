@@ -118,20 +118,8 @@
   .card {
     /*Una altura máxima de 160px, que son 40px menos que en la vista para desktop*/
     max-height: 10rem;
+    max-width: 300px;
   }
-  /*Le quitamos la rotación a la imagen.*/
-  /* .rotate-img {
-    transform: none;
-  } */
-  /*El contenedor de la imagen de cada proyectos no lo mostramos*/
-  /* .card__image-container {
-    display: none;
-  } */
-  /*La vista de cada proyecto con su título y botones  si se muestra*/
-  /* .card__content {
-    transform: none;
-    position: relative;
-  } */
   .card__title-container {
     height: 25%;
   }
