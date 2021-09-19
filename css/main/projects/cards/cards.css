@@ -111,12 +111,8 @@
     /*En modo responsive los cards puedan girar al pasar el cursor*/
     /* z-index: 2; */
   }
-  .p-description {
-    /*Ocultamos las indicaciones*/
-    display: none;
-  }
   .card {
-    /*Una altura máxima de 160px, que son 40px menos que en la vista para desktop*/
+    /*Una altura de 160px y ancho de 300 px, que son 40px menos que en la vista para desktop*/
     height: 10rem;
     width: 300px;
   }

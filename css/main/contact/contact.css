@@ -3,7 +3,7 @@
 }
 
 .contact__button-container {
-  height: 70%;
+  height: 40%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width:48rem) {
+  .p-description {
+    text-align: center;
+  }
   .contact__button-container {
     flex-direction: column;
   }
