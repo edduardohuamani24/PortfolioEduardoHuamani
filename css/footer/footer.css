@@ -17,11 +17,11 @@
   color: var(--color-blanco-opaco);
   /*shorthand de font-weight,font-size y font-family*/
   font: bold 1.125rem Roboto;
-  text-align: center;
 }
 
 @media screen and (max-width:48rem) {
   .footer__text {
     font-size: 0.75rem;
+    text-align: center;
   }
 }
