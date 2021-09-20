@@ -7,21 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Huamani - Front end Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
-  <link rel="stylesheet" href="css/body.css">
-  <link rel="stylesheet" href="css/header/logo/logo.css">
-  <link rel="stylesheet" href="css/header/nav/list.css">
-  <link rel="stylesheet" href="css/main/home/home.css">
-  <link rel="stylesheet" href="css/main/skills/skills.css">
-  <link rel="stylesheet" href="css/main/projects/cards/cards.css">
-  <link rel="stylesheet" href="css/main/hobbies/hobbies.css">
-  <link rel="stylesheet" href="css/main//contact/contact.css">
-  <link rel="stylesheet" href="css/footer/footer.css">
   <!-- Mediante el atributo defer permite que el script se ejecute después que el DOM halla cargado por completo -->
-  <script defer src="js/main.js" type="module"></script>
+  <!-- <script defer src="dist/build.js"></script> -->
 </head>
 
-<body id="body">
+<body id=" body">
   <header class="header">
     <div class="logo">
       EH
@@ -64,8 +54,9 @@
   <main class="main">
     <section id="home-section">
       <div class="home">
-        <div class="photo-container">
-          <img src="img/foto.jpg" alt="Foto del autor del sitio web" class="photo-container__developer">
+        <div id="foto_perfil" class="photo-container">
+          <!-- <img id="foto_perfil" src="img/foto.jpg" alt="Foto del autor del sitio web"
+            class="photo-container__developer"> -->
         </div>
         <div class="developer">
           <h1 class="devoloper__name">Eduardo Huamani</h1>
@@ -100,11 +91,11 @@
     <section id="projects-section">
       <div class="projects main-section">
         <div class="sub-title">Proyectos</div>
-        <p class="p-description"> Pasar el cursor en cada tarjeta para ver los enlaces.</p>
+        <p class="p-description"> Selecciona cada tarjeta para ver los enlaces de mis proyectos.</p>
         <div class="card-container">
           <div class="card">
-            <div class="card__image-container">
-              <img class="card__image" src="img/proyecto_1.PNG" alt="Imágen del primer proyecto">
+            <div id="project_card_1" class="card__image-container">
+              <!-- <img class="card__image" src="img/proyecto_1.png" alt="Imágen del primer proyecto"> -->
             </div>
             <div class="card__content">
               <div class="card__title-container">
@@ -125,8 +116,8 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__image-container">
-              <img class="card__image" src="img/proyecto_2.PNG" alt="Imágen del segundo proyecto">
+            <div id="project_card_2" class="card__image-container">
+              <!-- <img class="card__image" src="img/proyecto_2.png" alt="Imágen del segundo proyecto"> -->
             </div>
             <div class="card__content">
               <div class="card__title-container">
@@ -188,7 +179,7 @@
     <section id="contact-section">
       <div class="contact main-section">
         <div class="sub-title">Contacto</div>
-        <p class="p-description"> Click en los iconos para acceder a mi sitio en Github y Linkedin.</p>
+        <p class="p-description"> Click en los iconos para acceder a mis sitios en Github y Linkedin.</p>
         <div id="button_container" class="contact__button-container">
           <button id="button_github" class="contact__button" type="button">
             <i class="contact__icon fab fa-github"></i>
