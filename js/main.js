@@ -1,3 +1,8 @@
+/*Importar imágenes */
+import picture from "./../img/foto.jpg";
+import cover_1 from "./../img/proyecto_1.png";
+import cover_2 from "./../img/proyecto_2.png";
+
 import { openCloseHam } from "./header/nav/mobile/show_nav_list_responsive.js";
 import { showHiddenHeader } from "./header/nav/desktop/show_hide_nav.js";
 import { rotateImage } from "./main/projects/card/desktop/rotate_img.js";
@@ -21,10 +26,16 @@ import "./../css/main/hobbies/hobbies.css";
 import "./../css/main/contact/contact.css";
 import "./../css/footer/footer.css";
 
-/*Importar imágenes */
-import picture from "./../img/foto.jpg";
-import cover_1 from "./../img/proyecto_1.png";
-import cover_2 from "./../img/proyecto_2.png";
+//Enlazar con los contenedores de las imágenes
+const foto_perfil = document.getElementById("foto_perfil");
+const project_card_1 = document.getElementById("project_card_1");
+const project_card_2 = document.getElementById("project_card_2");
+
+// Agregar las imágenes a los contenedores
+foto_perfil.innerHTML = ` <img src=${picture} alt="Foto del autor del sitio web"
+            class="photo-container__developer">`;
+project_card_1.innerHTML = `<img class="card__image" src=${cover_1} alt="Imágen del primer proyecto">`;
+project_card_2.innerHTML = `<img class="card__image" src=${cover_2} alt="Imágen del segundo proyecto">`;
 
 // Abrir y cerrar el botón con forma de hamburguesa en vista para móviles.
 openCloseHam();
@@ -42,14 +53,3 @@ closeNav();
 activateLink();
 /*Abrir páginas de mis proyectos ya mínificados los archivos */
 linkPage();
-
-//Enlazar con los contenedores de las imágenes
-const foto_perfil = document.getElementById("foto_perfil");
-const project_card_1 = document.getElementById("project_card_1");
-const project_card_2 = document.getElementById("project_card_2");
-
-// Agregar las imágenes a los contenedores
-foto_perfil.innerHTML = ` <img src=${picture} alt="Foto del autor del sitio web"
-            class="photo-container__developer">`;
-project_card_1.innerHTML = `<img class="card__image" src=${cover_1} alt="Imágen del primer proyecto">`;
-project_card_2.innerHTML = `<img class="card__image" src=${cover_2} alt="Imágen del segundo proyecto">`;
