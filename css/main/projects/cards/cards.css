@@ -61,10 +61,15 @@
   transform: rotateY(180deg);
   /*El valor absolute lo usamos para que los elementos se ubican en el mismo lugar*/
   position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "card-title card-title" "card-description card-links ";
 }
 
 .card__title-container {
-  height: 20%;
+  grid-area: card-title;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,23 +81,31 @@
 }
 
 .card__description {
+  height: 10rem;
+  grid-area: card-description;
   color: var(--color-plomo-oscuro);
   font-weight: bolder;
-  text-align: center;
-  margin-top: 1.25rem;
+  text-align: justify;
+  margin: 1.25rem;
 }
 
 .card__button-container {
+  height: 10rem;
+  width: 12.5rem;
+  grid-area: card-links;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card__button {
-  border-radius: 1.25rem;
   height: 3.125rem;
-  padding: 0.625rem;
+  width: 60%;
+  line-height: 3.125rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.25rem;
   background: var(--color-plomo-oscuro);
   color: var(--color-blanco-opaco);
   font-weight: bold;
@@ -114,10 +127,7 @@
   .card {
     /*Una altura de 160px y ancho de 300 px, que son 40px menos que en la vista para desktop*/
     height: 10rem;
-    width: 300px;
-  }
-  .card__title-container {
-    height: 25%;
+    width: 18.75rem;
   }
   .card__description {
     /*La descripción de cada proyecto dentro de la card*/
@@ -125,7 +135,7 @@
   }
   .card__button-container {
     /*Le damos una altura del 80% al contenedor de botones y los otros 20% se resta del titulo de cada card*/
-    height: 75%;
+    height: 100%;
     display: flex;
     /*Se cambia la dirección flex en columna*/
     flex-direction: column;
@@ -134,8 +144,8 @@
   }
   .card__button {
     /*Anchura de casi todo el contenedor padre*/
-    width: 90%;
-    padding: 0;
+    width: 50%;
+    /* padding: 0; */
   }
   .card__hidden {
     visibility: hidden;
